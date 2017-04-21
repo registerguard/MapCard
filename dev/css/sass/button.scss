@@ -1,0 +1,44 @@
+// For back to top button, fixed on bottom right
+.totop-button{
+	position: fixed;
+	margin: 0;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	left: 0;
+	padding: 10px;
+	z-index: 999;
+	
+	// Disappear at top, will appear on scroll
+	display: none;
+	
+	color: #fff;
+	text-align: center;
+	
+	background-color: ccc(.8);
+	transition: background-color .5s ease;
+	
+	&:hover{
+		cursor: pointer;
+		
+		background-color: ccc(1);
+		transition: background-color .5s ease;
+	}
+	
+}
+
+@media screen and (min-width: 600px){
+	.totop-button {
+		margin: 10px;
+		padding: 10px;
+		top: unset;
+		right: 0;
+		bottom: 0;
+		left: unset; 
+		
+		opacity: .8;
+	
+		background-color: ccc(.8);
+		transition: background-color .5s ease;
+	}
+}

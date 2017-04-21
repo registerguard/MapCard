@@ -1,0 +1,155 @@
+<!doctype html>
+<head>
+	
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+		<title>MapCard Example</title>
+		<meta property="og:title" content="MapCard Example">
+		<meta name="description" content="This is an example.">
+		<meta name="keywords" content="...">
+		<link rel="image_src" href="...">
+		<meta property="og:image" content="...">
+		<link rel="canonical" href="...">
+		<meta property="og:url" content="...">
+		<meta property="og:site_name" content="The Register-Guard">
+		<meta property="og:type" content="article">
+		
+		<link rel="stylesheet" href="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20170417/1/css/bulldog.min.css">
+		
+		<link rel="stylesheet" href="css/styles.min.css">
+		
+		<!-- [BEGIN] Zeppelin -->
+		<link rel="stylesheet" href="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140911/1/styles/zeppelin.min.css">
+		<script src="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140911/1/scripts/zeppelin.min.js"></script>
+		<!-- [END] Zeppelin -->
+		
+		<!-- ************************************************* -->
+		<!-- ************          DFP          ************** -->
+		<!-- ************************************************* -->
+			<link rel="stylesheet" href="http://advertising.registerguard.com/assets/hosted/css/ads.css?v=20141020">
+			
+			<!--// Begin Bidder //-->
+			<script type="text/javascript" src="//os4m-d.openx.net/w/1.0/jstag?nc=30582678-OS4_Bidder"></script>
+			<script type="text/javascript">
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+				(function() {
+				var gads = document.createElement("script");
+				gads.async = true;
+				gads.type = "text/javascript";
+				var useSSL = "https:" == document.location.protocol;
+				gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+				var node =document.getElementsByTagName("script")[0];
+				node.parentNode.insertBefore(gads, node);
+				})();
+			</script>
+			<!--// End Bidder //-->
+			
+			<script>
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+			</script>
+			
+			<script>
+			
+				googletag.cmd.push(function() {
+				
+				// Set up size mapping
+				var mapping = googletag.sizeMapping()
+					.addSize([0, 0], [320, 50]) // Default banner is mobile banner (320x50)
+					.addSize([1005, 100], [728, 90]) // On C breakpoint (>1005px) show desktop banner (728x90)
+					.build();
+					
+				googletag.defineSlot('/30582678/RGM', [[320, 50], [728, 90]], 'leaderboard-top')
+					.setTargeting('pos', ['atf'])
+					.defineSizeMapping(mapping)
+					.addService(googletag.pubads());
+				googletag.defineSlot('/30582678/RGM', [[300, 600],[300, 250]], 'medium-rectangle-1')
+					.setTargeting('pos', ['atf','rgm_one'])
+					.addService(googletag.pubads());
+					
+				googletag.pubads().setTargeting('page-type','article');
+				
+				// General stuff
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+			
+		</script>
+		
+		<!-- ************************************************* -->
+		<!-- ************          /DFP         ************** -->
+		<!-- ************************************************* -->
+	
+</head>
+<body>
+	
+	<header id="zeppelin" role="banner" class="z_animated">
+		<h6><a href="http://registerguard.com">The Register-Guard</a></h6>
+		<p><a href="http://github.com/registerguard/mapcard/">MapCard</a></p>
+	</header>
+	
+	<div id="mapwrap">
+		
+		<div id="mapid"></div>
+		
+		<div class="key">
+			
+			<div class="key-item blue">
+				<img src="media/blue.png">
+				<span class="label">Food</span>
+			</div>
+			
+			<div class="key-item green">
+				<img src="media/green.png">
+				<span class="label">Hike</span>
+			</div>
+			
+			<div class="key-item red">
+				<img src="media/red.png">
+				<span class="label">Newspaper</span>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+	<div id="wrapper">
+		
+		<header class="headline">
+			<h1>MapCard Example</h1>
+			<div class="bydate">
+				<div class="byline">By <a href="mailto:rob.denton@registerguard.com">Rob Denton</a> | </span>The Register-Guard</div>
+				<div class="date">April 20, 2017</div>
+			</div>
+		</header>
+		
+		<div id="cards"></div>
+		
+		<p class="caption">Data from <a href="#" target="_blank">me</a>, updated on April 20, 2017.</p>
+		
+	</div>
+	
+	<footer>
+		<div id="bd_press">
+			<p><span>The Register-Guard <span class="bat_break">•</span></span> <span><a href="http://g.co/maps/h6sgk">3500 Chad Drive</a> • Eugene, OR • 97408 <span class="bat_break">/</span></span> <span>(541) 485-1234 <span>/</span> <a href="mailto:feedback@registerguard.com">Feedback</a></span></p>
+			<p><span>Copyright © 2017 <span class="bat_break">/</span></span> <span><a href="http://projects.registerguard.com/pages/terms-of-use/">Terms</a> <span>/</span> <a href="http://projects.registerguard.com/pages/privacy-statement/">Privacy</a> <span>/</span> <a href="http://projects.registerguard.com/pages/copyright/">Copyright</a></span></p>
+		</div>
+	</footer>
+	
+	<div class="totop-button head">Back to top<div>
+	
+	<script>if(!window.jQuery){document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');}</script>
+	
+	<script src="js/scripts.min.js"></script>
+	
+	<!-- [BEGIN] Analytics -->
+	<script>(function(r,g,n,e,w,s){r.GoogleAnalyticsObject=e;r[e]||(r[e]=function(){(r[e].q=r[e].q||[]).push(arguments)});r[e].l=+new Date;w=g.createElement(n);s=g.getElementsByTagName(n)[0];w.async=1;w.src='//www.google-analytics.com/analytics.js';s.parentNode.insertBefore(w,s)}(window,document,'script','ga'));ga('create','UA-882065-1','registerguard.com');ga('require','displayfeatures');ga('require','linkid','linkid.js');ga('send','pageview',{'dimension1':'Rob Denton','dimension2':'potshops','dimension3':'Apr 19, 2017 9:00AM','dimension4':'http://cloud.registerguard.com/marijuana/','dimension5':'Explore the growing number of active and proposed marijuana shops in Lane County'});</script>
+	<!-- [END] Analytics -->
+	
+	
+	
+</body>
+</html>

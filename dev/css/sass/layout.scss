@@ -1,0 +1,81 @@
+// Headline and byline
+.headline {
+	
+	margin: 0 10px;
+	
+	h1{
+		margin-bottom: 10px;
+	}
+	
+	.bydate {
+		
+		@include flexy(column);
+		
+		border-top: 1px solid ccc(.5);
+		border-bottom: 1px solid ccc(.5);
+		padding: 10px 0 10px 0;
+	
+		.byline, .date {
+			@include flexy-flex(100%, 1, 0, auto)
+		}
+	
+		.byline{
+			font-weight: 900;
+			font-family: Cambria, Georgia, serif!important;
+			font-variant: small-caps;
+		}
+	
+		.date{
+			font-weight: 100;
+			color: #666;
+			font-family: Cambria, Georgia, serif!important;
+		}
+	}
+}
+
+// Go out to one row on desktop
+@media screen and (min-width: 600px){
+	.headline {
+		.bydate {
+			
+			@include flexy(row);
+			
+			justify-content: space-between;
+			
+			.byline, .date {
+				
+				@include flexy-flex(initial, unset)
+			}
+			.date {
+				justify-content: flex-end;
+			}
+		}
+	}
+}
+
+// Wrap content
+#wrapper{
+	margin: 0 auto 10px auto;
+	max-width: 1200px;
+	padding: 10px;
+	
+	p.caption{
+		margin: 0 10px;
+	}
+	
+}
+
+// Color the text per category
+.newspaper .label{
+	color: $red;
+}
+.hike .label{
+	color: $green;
+}
+.food .label{
+	color: $blue;
+}
+
+footer {
+	margin: 0 20px;
+}

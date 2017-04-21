@@ -1,0 +1,16 @@
+id,category,name,address,city,state,zip,lat,long,more
+1,newspaper,The Register-Guard,3500 Chad Dr.,Eugene,OR,97408,44.086041,-123.052411
+2,hike,Spencer Butte,85385 Willamette St.,Eugene,OR,97405,43.983121,-123.095766
+3,hike,Mount Pisgah,34901 Frank Parrish Rd.,Eugene,OR,97405,44.005777,-122.964390
+4,newspaper,Daily Emerald,1222 E. 13th Ave.,Eugene,OR,97403,44.044885,-123.073737
+5,food,Papa's Soul Food Kitchen & BBQ,400 Blair Blvd.,Eugene,OR,97402,44.055306,-123.109384
+6,food,Sweet Life Patisserie,755 Monroe St., Eugene, OR, 97402, 44.051485, -123.104727
+7,food,The Bier Stein, 1591 Willamette St., Eugene, OR, 97401, 44.042397, -123.092343
+8,food,Daily Bagel,4770 Village Plaza Loop,Eugene, OR, 97401, 44.087012, -123.105753
+9,food,El Taco Express,647 W Centennial Blvd, Springfield, OR, 97477, 44.056187, -123.035716
+10,food,Addi's Diner, 207 S. A St., Springfield, OR, 97477, 44.045535, -123.023185
+11,food,Hayden Bridge Taphouse, 1910 Marcola Rd., Springfield, OR, 97477, 44.065840, -122.996262
+12,food,Turtles,2690 Willamette St.,Eugene,OR,97405,44.029215, -123.091120
+13,food,Rain NW,1190 City View St.,Eugene,OR,97402,44.0466475,-123.1293218
+15,food,Giant Burger,3760 Main St.,Springfield,OR,97478,44.045962, -122.972683
+16,food,Hideaway Bakery,3377 E. Amazon Dr.,Eugene,OR, 97405,44.020241, -123.080008

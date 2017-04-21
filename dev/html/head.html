@@ -1,0 +1,85 @@
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<title>MapCard Example</title>
+	<meta property="og:title" content="MapCard Example">
+	<meta name="description" content="This is an example.">
+	<meta name="keywords" content="...">
+	<link rel="image_src" href="...">
+	<meta property="og:image" content="...">
+	<link rel="canonical" href="...">
+	<meta property="og:url" content="...">
+	<meta property="og:site_name" content="The Register-Guard">
+	<meta property="og:type" content="article">
+	
+	<link rel="stylesheet" href="http://static.registerguard.com/v5/bulldog/dist/1.0.0/20170417/1/css/bulldog.min.css">
+	
+	<!-- @if NODE_ENV='development' -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- @endif -->
+	<!-- @if NODE_ENV='production' -->
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!-- @endif -->
+	
+	<!-- [BEGIN] Zeppelin -->
+	<link rel="stylesheet" href="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140911/1/styles/zeppelin.min.css">
+	<script src="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140911/1/scripts/zeppelin.min.js"></script>
+	<!-- [END] Zeppelin -->
+	
+	<!-- ************************************************* -->
+	<!-- ************          DFP          ************** -->
+	<!-- ************************************************* -->
+		<link rel="stylesheet" href="http://advertising.registerguard.com/assets/hosted/css/ads.css?v=20141020">
+		
+		<!--// Begin Bidder //-->
+		<script type="text/javascript" src="//os4m-d.openx.net/w/1.0/jstag?nc=30582678-OS4_Bidder"></script>
+		<script type="text/javascript">
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			(function() {
+			var gads = document.createElement("script");
+			gads.async = true;
+			gads.type = "text/javascript";
+			var useSSL = "https:" == document.location.protocol;
+			gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+			var node =document.getElementsByTagName("script")[0];
+			node.parentNode.insertBefore(gads, node);
+			})();
+		</script>
+		<!--// End Bidder //-->
+		
+		<script>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+		</script>
+		
+		<script>
+		
+			googletag.cmd.push(function() {
+			
+			// Set up size mapping
+			var mapping = googletag.sizeMapping()
+				.addSize([0, 0], [320, 50]) // Default banner is mobile banner (320x50)
+				.addSize([1005, 100], [728, 90]) // On C breakpoint (>1005px) show desktop banner (728x90)
+				.build();
+				
+			googletag.defineSlot('/30582678/RGM', [[320, 50], [728, 90]], 'leaderboard-top')
+				.setTargeting('pos', ['atf'])
+				.defineSizeMapping(mapping)
+				.addService(googletag.pubads());
+			googletag.defineSlot('/30582678/RGM', [[300, 600],[300, 250]], 'medium-rectangle-1')
+				.setTargeting('pos', ['atf','rgm_one'])
+				.addService(googletag.pubads());
+				
+			googletag.pubads().setTargeting('page-type','article');
+			
+			// General stuff
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+		
+	</script>
+	
+	<!-- ************************************************* -->
+	<!-- ************          /DFP         ************** -->
+	<!-- ************************************************* -->

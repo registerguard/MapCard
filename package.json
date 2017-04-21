@@ -1,0 +1,22 @@
+{
+  "name": "grunt-starter",
+  "version": "0.0.1",
+  "description": "RD's grunt starter kit.",
+  "repository": "https://github.com/robertdenton/grunt-starter",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-aws-s3": "^0.14.5",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-preprocess": "^5.1.0",
+    "grunt-sass": "^2.0.0",
+    "leaflet": "^1.0.3",
+    "leaflet-omnivore": "^0.3.4"
+  }
+}

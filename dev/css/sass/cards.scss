@@ -1,0 +1,33 @@
+// Flexbox wrapper for the cards below the map
+#cards{
+	// Make Flexbox rows
+	@include flexy(row)
+	
+	// Wrap by default
+	@include flexy-wrap(wrap);
+
+	.card{
+		// Grow from but don't shrink beneath 250px (Might want to change this to 300 for in-line ads)
+		@include flexy-flex(50%, 1, 0, 250px);
+		
+		// Style the card
+		border: 1px solid ccc(.5);
+		margin: 10px;
+		padding: 10px;
+		box-shadow: 2px 2px 5px 1px #ccc;
+		transition: background 1s ease;
+	}
+	
+	// Allow for ads in the flow
+	// Grow or shrink, just be 100% width
+	.card-ad {
+		@include flexy-flex(100%, 1, 1, 100%);
+	}
+	
+	// Break out of #wrapper for 320px wide devices so ad can go side to side
+	@media screen and (max-width: 400px){
+		.card-ad{
+			margin-left: -10px;
+		}
+	}
+}

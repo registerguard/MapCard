@@ -1,0 +1,16 @@
+<script>if(!window.jQuery){document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');}</script>
+
+<!-- @if NODE_ENV='development' -->
+
+<script src="js/scripts.js"></script>
+
+<!-- @endif -->
+<!-- @if NODE_ENV='production' -->
+
+<script src="js/scripts.min.js"></script>
+
+<!-- [BEGIN] Analytics -->
+<script>(function(r,g,n,e,w,s){r.GoogleAnalyticsObject=e;r[e]||(r[e]=function(){(r[e].q=r[e].q||[]).push(arguments)});r[e].l=+new Date;w=g.createElement(n);s=g.getElementsByTagName(n)[0];w.async=1;w.src='//www.google-analytics.com/analytics.js';s.parentNode.insertBefore(w,s)}(window,document,'script','ga'));ga('create','UA-882065-1','registerguard.com');ga('require','displayfeatures');ga('require','linkid','linkid.js');ga('send','pageview',{'dimension1':'Rob Denton','dimension2':'potshops','dimension3':'Apr 19, 2017 9:00AM','dimension4':'http://cloud.registerguard.com/marijuana/','dimension5':'Explore the growing number of active and proposed marijuana shops in Lane County'});</script>
+<!-- [END] Analytics -->
+
+<!-- @endif -->

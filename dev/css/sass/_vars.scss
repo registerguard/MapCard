@@ -1,0 +1,47 @@
+// Useful colors 
+// Example: color: $active;
+$red: #ae1a1f;
+$green: #638008;
+$blue: #00517e;
+
+// #ccc with various opacities
+// Example: border: 1px solid ccc(.5);
+@function ccc($opacity){
+	@return rgba(136,136,136,$opacity);
+}
+
+// To replace display and flex-direction
+// Example: @include flexy(row);
+@mixin flexy($orientation){
+	
+	display: block;//            Fall back
+	display: -webkit-box;//      OLD - iOS 6-, Safari 3.1-6
+	display: -ms-flexbox;//      TWEENER - IE 10
+	display: -webkit-flex;//     NEW - Chrome
+	display: flex;//             Modern implementation
+
+	-ms-flex-direction: $orientation;
+	-webkit-flex-direction: $orientation;
+	flex-direction: $orientation;
+	
+}
+
+// Wrap or not?
+// Example: @include flexy-wrap(wrap);
+@mixin flexy-wrap($wrap){
+	-ms-flex-wrap: $wrap;
+	-webkit-flex-wrap: $wrap;
+	flex-wrap: $wrap;
+}
+
+// To replace flex and fallbacks
+// Example: @include flexy-flex(20% 1 0 250px)
+// Example: @include flexy-flex(initial, unset);
+@mixin flexy-flex($width, $grow, $shrink:null, $basis:null){
+	-webkit-box-flex: $grow $shrink $basis;//      OLD - iOS 6-, Safari 3.1-6
+	-moz-box-flex: $grow $shrink $basis;//         OLD - Firefox 19-
+	width: $width;//                               For old syntax, otherwise collapses.
+	-webkit-flex: $grow $shrink $basis;//          Chrome
+	-ms-flex: $grow $shrink $basis;//              IE 10
+	flex: $grow $shrink $basis;//                  Modern implementation
+}
