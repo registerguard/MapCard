@@ -1,10 +1,10 @@
-MapCard
+#MapCard
 
 Please let the record reflect that I wanted to name this project either Mappy McCardFace or Cardy McMapFace but was denied both.
 
-Example: http://cloud.registerguard.com/marijuana-shops/
+Example: http://cloud.registerguard.com/mapcard/
 
-This is a Grunt project to easily create and deploy flat-file interactive maps and related cards.
+This is a Grunt project to easily create and deploy flat-file interactive maps and related cards. Inspired by [this awesome page](http://interactive.nydailynews.com/2016/02/nypd-nuisance-abatement-case-studies-interactive/index.html) from ProPublica/NY Daily News.
 
 ## Getting started
 
